@@ -6,10 +6,10 @@ describe('ClosingFunnel Component — Lead Discovery & B2B Form', () => {
   it('renders with default selected need and all option buttons', () => {
     render(<ClosingFunnel />);
 
-    expect(screen.getByText('Hablemos de la fricción operativa de su negocio.')).toBeInTheDocument();
-    expect(screen.getByText('Sistemas de Servicio & Operativa (POS / KDS)')).toBeInTheDocument();
-    expect(screen.getByText('Software y Plataformas Web a Medida')).toBeInTheDocument();
-    expect(screen.getByText('Auditoría de Fricción de Sistema Actual')).toBeInTheDocument();
+    expect(screen.getByText('¿Su software actual frena el ritmo de su equipo?')).toBeInTheDocument();
+    expect(screen.getByText('Auditoría y optimización de mi TPV o software actual')).toBeInTheDocument();
+    expect(screen.getByText('Rediseño de pantallas de comanderos / monitores de cocina (KDS)')).toBeInTheDocument();
+    expect(screen.getByText('Desarrollo de software operativo a medida para mi negocio')).toBeInTheDocument();
   });
 
   it('respects preselectedService prop passed from Services section', () => {
@@ -22,7 +22,7 @@ describe('ClosingFunnel Component — Lead Discovery & B2B Form', () => {
   it('displays validation error if email is invalid', async () => {
     render(<ClosingFunnel />);
 
-    const emailInput = screen.getByLabelText(/correo profesional corporativo/i);
+    const emailInput = screen.getByLabelText(/correo electrónico de contacto/i);
     const submitBtn = screen.getByRole('button', { name: /solicitar diagnóstico/i });
 
     fireEvent.change(emailInput, { target: { value: 'not-an-email' } });
@@ -36,7 +36,7 @@ describe('ClosingFunnel Component — Lead Discovery & B2B Form', () => {
   it('displays validation error if privacy consent is not checked', async () => {
     render(<ClosingFunnel />);
 
-    const emailInput = screen.getByLabelText(/correo profesional corporativo/i);
+    const emailInput = screen.getByLabelText(/correo electrónico de contacto/i);
     const submitBtn = screen.getByRole('button', { name: /solicitar diagnóstico/i });
 
     fireEvent.change(emailInput, { target: { value: 'gerente@restauracion.com' } });
@@ -60,7 +60,7 @@ describe('ClosingFunnel Component — Lead Discovery & B2B Form', () => {
   it('completes submission with valid data and renders confirmation card with tracking ID', async () => {
     render(<ClosingFunnel />);
 
-    const emailInput = screen.getByLabelText(/correo profesional corporativo/i);
+    const emailInput = screen.getByLabelText(/correo electrónico de contacto/i);
     const consentCheckbox = screen.getByRole('checkbox');
     const submitBtn = screen.getByRole('button', { name: /solicitar diagnóstico/i });
 
