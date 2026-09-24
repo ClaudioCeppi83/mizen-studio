@@ -32,8 +32,8 @@ export const Manifesto: React.FC = () => {
               color: 'var(--text-primary)',
               marginBottom: '20px'
             }}>
-              El software debe servir.<br />
-              <span style={{ color: 'var(--accent-amber)' }}>Nunca estorbar.</span>
+              El software debe servir al equipo.<br />
+              <span style={{ color: 'var(--accent-amber)' }}>Nunca frenar el servicio.</span>
             </h2>
 
             <div style={{
@@ -58,22 +58,21 @@ export const Manifesto: React.FC = () => {
               marginBottom: '32px'
             }}>
               <p style={{ marginBottom: '16px' }}>
-                La mayoría de las herramientas digitales que utilizan los negocios son concebidas en oficinas
-                desconectadas de la realidad física de trabajo. El resultado habitual son sistemas lentos,
-                pantallas saturadas y flujos confusos que generan estrés en el personal, provocan errores de cobro
-                o stock y retrasan la operativa.
+                La inmensa mayoría del software comercial para hostelería ha sido diseñado en despachos por personas
+                que jamás han vivido una sala llena un sábado por la noche. El resultado son pantallas caóticas,
+                botones diminutos que provocan toques erróneos y sistemas que se congelan justo cuando hay cola para cobrar.
               </p>
               
               <p style={{ marginBottom: '16px' }}>
-                En <strong>MIZEN</strong> abordamos la tecnología desde el prisma opuesto. Aplicamos la disciplina del
-                <em> mise en place</em> gastronómico a la arquitectura digital: orden estricto, interfaces limpias y
-                sistemas preparados para operar bajo máxima presión.
+                En <strong>MIZEN</strong> abordamos la tecnología desde la trinchera del servicio. Aplicamos la disciplina del
+                <em> «mise en place»</em> a la ingeniería de software: todo en su sitio antes de abrir puertas, interfaces
+                limpias donde cada botón mide al menos 48px y sistemas blindados para no colgarse bajo máxima presión.
               </p>
 
               <p>
-                No vendemos diseño meramente decorativo ni plantillas genéricas. Diseñamos e implementamos herramientas operativas a medida
-                (tanto aplicaciones web de alto rendimiento como software nativo) que eliminan pasos innecesarios,
-                reducen el margen de error a cero y devuelven el control en tiempo real al responsable del negocio.
+                No vendemos licencias genéricas de alquiler mensual ni cosmética visual. Desarrollamos herramientas operativas
+                a medida de su flujo de trabajo que eliminan pasos superfluos, protegen el arqueo de caja y devuelven la tranquilidad
+                a quien dirige el turno.
               </p>
             </div>
 
@@ -105,10 +104,10 @@ export const Manifesto: React.FC = () => {
                   <span>EL DEFECTO HABITUAL</span>
                 </div>
                 <ul style={{ listStyle: 'none', fontSize: '13px', color: 'var(--text-secondary)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                  <li>• Clics superfluos que retrasan la atención</li>
-                  <li>• Spinners y pantallas que se congelan en horas punta</li>
-                  <li>• Menús caóticos sin jerarquía de rol</li>
-                  <li>• Cero prevención contra el borrado accidental</li>
+                  <li>• 4 toques de pantalla para una acción que debería tomar 5 segundos</li>
+                  <li>• Pantallas congeladas y cobros bloqueados en hora punta</li>
+                  <li>• Botones diminutos que provocan errores de cobro y platos equivocados</li>
+                  <li>• Descuadres diarios de caja por tickets anulados sin control</li>
                 </ul>
               </div>
 
@@ -134,10 +133,10 @@ export const Manifesto: React.FC = () => {
                   <span>EL ESTÁNDAR MIZEN</span>
                 </div>
                 <ul style={{ listStyle: 'none', fontSize: '13px', color: 'var(--text-primary)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                  <li>• Respuestas instantáneas en menos de 80-100ms</li>
-                  <li>• Vistas separadas por rol (táctil operario vs analítica directiva)</li>
-                  <li>• Modales de doble confirmación defensiva</li>
-                  <li>• Datos monoespaciados de fácil lectura periférica</li>
+                  <li>• Cobro y comandas resueltos en 1 o 2 toques instantáneos (&lt;80ms)</li>
+                  <li>• Funcionamiento ininterrumpido offline ante caídas de internet</li>
+                  <li>• Botones táctiles amplios (≥48px) con confirmación clara</li>
+                  <li>• Doble verificación defensiva que blinda el arqueo de caja</li>
                 </ul>
               </div>
             </div>

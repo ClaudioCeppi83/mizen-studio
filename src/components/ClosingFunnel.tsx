@@ -8,7 +8,7 @@ interface ClosingFunnelProps {
 }
 
 export const ClosingFunnel: React.FC<ClosingFunnelProps> = ({ preselectedService }) => {
-  const [selectedNeed, setSelectedNeed] = useState<string>(preselectedService || 'Software o Web a medida');
+  const [selectedNeed, setSelectedNeed] = useState<string>(preselectedService || 'Auditoría y optimización de mi TPV o software actual');
   const [email, setEmail] = useState<string>('');
   const [acceptedPrivacy, setAcceptedPrivacy] = useState<boolean>(false);
   const [honeypot, setHoneypot] = useState<string>('');
@@ -77,7 +77,7 @@ export const ClosingFunnel: React.FC<ClosingFunnelProps> = ({ preselectedService
             marginBottom: '16px',
             color: 'var(--text-primary)'
           }}>
-            Hablemos de la fricción operativa de su negocio.
+            ¿Su software actual frena el ritmo de su equipo?
           </h2>
 
           {/* Empathetic & Explanatory Subtitle */}
@@ -88,8 +88,8 @@ export const ClosingFunnel: React.FC<ClosingFunnelProps> = ({ preselectedService
             maxWidth: '660px',
             margin: '0 auto 32px auto'
           }}>
-            Evaluamos qué herramientas utiliza actualmente en su sala, pase o administración, identificamos
-            dónde se pierde tiempo o dinero y estructuramos una solución limpia en una sesión de diagnóstico de 30 minutos sin coste ni compromiso.
+            Analicemos su operativa de sala o cocina en una sesión de 30 minutos sin coste ni compromiso.
+            Identificamos dónde se pierde tiempo o dinero y le mostramos cómo resolverlo con herramientas a medida.
           </p>
 
           {!submitted ? (
@@ -119,9 +119,9 @@ export const ClosingFunnel: React.FC<ClosingFunnelProps> = ({ preselectedService
                     gap: '10px'
                   }}>
                   {[
-                    'Sistemas de Servicio & Operativa (POS / KDS)',
-                    'Software y Plataformas Web a Medida',
-                    'Auditoría de Fricción de Sistema Actual'
+                    'Auditoría y optimización de mi TPV o software actual',
+                    'Rediseño de pantallas de comanderos / monitores de cocina (KDS)',
+                    'Desarrollo de software operativo a medida para mi negocio'
                   ].map((option) => (
                     <button
                       type="button"
@@ -184,7 +184,7 @@ export const ClosingFunnel: React.FC<ClosingFunnelProps> = ({ preselectedService
                   marginBottom: '8px',
                   letterSpacing: '0.04em'
                 }}>
-                  Correo profesional corporativo:
+                  Correo electrónico de contacto:
                 </label>
                 
                 <div style={{ position: 'relative' }}>
@@ -204,7 +204,7 @@ export const ClosingFunnel: React.FC<ClosingFunnelProps> = ({ preselectedService
                     type="email"
                     required
                     aria-required="true"
-                    aria-label="Correo profesional corporativo"
+                    aria-label="Correo electrónico de contacto"
                     autoComplete="email"
                     maxLength={254}
                     value={email}
@@ -212,7 +212,7 @@ export const ClosingFunnel: React.FC<ClosingFunnelProps> = ({ preselectedService
                       setEmail(e.target.value);
                       if (errorMessage) setErrorMessage(null);
                     }}
-                    placeholder="direccion@su-empresa.com"
+                    placeholder="ejemplo@su-restaurante.com o nombre@gmail.com"
                     style={{
                       width: '100%',
                       padding: '12px 14px 12px 40px',

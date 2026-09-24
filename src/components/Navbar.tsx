@@ -126,7 +126,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onDiagnosticClick }) => {
           fontFamily: 'var(--font-mono)'
         }} className="desktop-descriptor">
           <Terminal size={13} style={{ color: 'var(--accent-amber)' }} />
-          <span>Operational Software &amp; Web Development Atelier</span>
+          <span>Software Operativo &amp; Sistemas a Medida</span>
         </div>
 
         {/* Navigation Actions */}
@@ -156,7 +156,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onDiagnosticClick }) => {
             className="btn-primary"
             style={{ fontSize: '13px' }}
           >
-            <span>Diagnóstico 30 Min</span>
+            <span>Solicitar Diagnóstico</span>
             <ArrowUpRight size={14} />
           </button>
         </div>

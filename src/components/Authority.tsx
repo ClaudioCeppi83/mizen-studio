@@ -28,7 +28,7 @@ export const Authority: React.FC = () => {
             letterSpacing: '-0.02em',
             color: 'var(--text-primary)'
           }}>
-            Garantía de autor: Diseñado desde la trinchera.
+            Criterio de autor: Software creado por quien ha gestionado sala.
           </h2>
         </div>
 
@@ -103,10 +103,10 @@ export const Authority: React.FC = () => {
               fontWeight: 500,
               fontStyle: 'normal'
             }}>
-              «No diseño interfaces desde la abstracción de una agencia digital. Mi criterio técnico nace
-              de años gestionando directamente salas, stocks y turnos bajo máxima presión. Conozco de primera mano
-              el perjuicio de un ticket atascado en el pase o una pantalla que se congela un sábado con el aforo al límite.
-              En MIZEN construimos el software con la fiabilidad y el rigor con el que a nosotros nos hubiera gustado operar.»
+              «No programamos software desde la abstracción de un despacho. Nuestro criterio técnico nace
+              de años gestionando directamente salas, compras y turnos con el salón lleno. Conozco de primera mano
+              la desesperación de un TPV bloqueado con cola para pagar o una comanda perdida en el pase de cocina.
+              En MIZEN construimos las herramientas con la fiabilidad y la inmediatez que exige la realidad del servicio.»
             </blockquote>
 
             <div style={{
@@ -120,7 +120,7 @@ export const Authority: React.FC = () => {
               paddingLeft: '12px'
             }}>
               <span style={{ fontWeight: 600, color: 'var(--text-primary)' }}>Claudio Ceppi</span>
-              <span>Founder & Head of Product Design — MIZEN Studio</span>
+              <span>Founder &amp; Head of Product Design — MIZEN Studio</span>
             </div>
           </div>
 
@@ -136,11 +136,11 @@ export const Authority: React.FC = () => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
               <Sparkles size={16} style={{ color: 'var(--accent-amber)' }} />
               <div className="font-mono" style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-primary)' }}>
-                01 // EMPATÍA DE PRIMERA LÍNEA
+                01 // ERGONOMÍA REAL EN SALA
               </div>
             </div>
             <p style={{ fontSize: '13px', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-              Interfaces ergonómicas a prueba de dedos apresurados, reflejos de iluminación y fatiga acumulada de turno.
+              Interfaces diseñadas para dedos con prisa, visibilidad bajo cualquier iluminación y turnos intensivos de trabajo.
             </p>
           </div>
 
@@ -148,11 +148,11 @@ export const Authority: React.FC = () => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
               <Shield size={16} style={{ color: 'var(--status-online)' }} />
               <div className="font-mono" style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-primary)' }}>
-                02 // DISEÑO DEFENSIVO
+                02 // RESISTENCIA AL ERROR HUMANO
               </div>
             </div>
             <p style={{ fontSize: '13px', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-              Doble blindaje visual e ingeniería de tipos que previenen activamente errores humanos de caja, stock o comanda.
+              Doble confirmación visual y salvaguardas que impiden errores involuntarios de caja, mesas o comandas.
             </p>
           </div>
 
@@ -160,11 +160,11 @@ export const Authority: React.FC = () => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
               <Zap size={16} style={{ color: 'var(--accent-amber)' }} />
               <div className="font-mono" style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-primary)' }}>
-                03 // CERO LATENCIA VISUAL
+                03 // VELOCIDAD INSTANTÁNEA (&lt;100MS)
               </div>
             </div>
             <p style={{ fontSize: '13px', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-              Cero demoras cosméticas y cero latencia de render (&lt;16ms). El software responde a la velocidad del operador.
+              Cero esperas y cero bloqueos. Cada botón responde al instante para no frenar jamás el ritmo del equipo.
             </p>
           </div>
         </div>

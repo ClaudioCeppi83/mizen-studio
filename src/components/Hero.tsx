@@ -30,7 +30,7 @@ export const Hero: React.FC<HeroProps> = ({ onDiagnosticClick, onExploreShowcase
             color: 'var(--accent-text)',
             background: 'var(--surface-card)'
           }}>
-            // 01. ARQUITECTURA DE SOFTWARE OPERATIVO &amp; INTERFACES DE MISIÓN CRÍTICA
+            // SOFTWARE OPERATIVO &amp; TPVs A MEDIDA PARA RESTAURACIÓN
           </span>
         </div>
 
@@ -45,8 +45,8 @@ export const Hero: React.FC<HeroProps> = ({ onDiagnosticClick, onExploreShowcase
           marginBottom: '20px',
           textTransform: 'uppercase'
         }}>
-          SISTEMAS DIGITALES <br />
-          <span style={{ color: 'var(--accent-amber)' }}>NACIDOS PARA OPERAR.</span>
+          SOFTWARE Y TPVs A MEDIDA <br />
+          <span style={{ color: 'var(--accent-amber)' }}>QUE NUNCA SE CUELGAN EN HORA PUNTA.</span>
         </h1>
 
         {/* Strategic Direct-Answer Block (AEO / GEO & Norma DOC 5: 15px regular, line-height 1.6, color --text-secondary) */}
@@ -58,9 +58,9 @@ export const Hero: React.FC<HeroProps> = ({ onDiagnosticClick, onExploreShowcase
           maxWidth: '740px',
           margin: '0 auto 32px auto'
         }}>
-          Diseñamos y construimos software a medida, terminales de alta velocidad y plataformas de gestión
-          para grupos de restauración y operativas de alta exigencia. Aplicamos la disciplina del <em>«mise en place»</em> a
-          la tecnología para eliminar la fricción entre personas, servicio y administración donde el margen de error es cero.
+          Diseñamos y programamos pantallas de comanderos, monitores de cocina (KDS) y paneles de control
+          que su equipo domina en minutos. Construidos por profesionales con experiencia real en sala para
+          eliminar errores de cobro, platos olvidados y pantallas congeladas cuando el salón está lleno.
         </p>
 
         {/* Action Buttons */}
@@ -73,11 +73,11 @@ export const Hero: React.FC<HeroProps> = ({ onDiagnosticClick, onExploreShowcase
           marginBottom: '48px'
         }}>
           <button onClick={onDiagnosticClick} className="btn-primary" style={{ padding: '10px 20px', fontSize: '14px' }}>
-            Agendar Diagnóstico Operativo
+            Solicitar Diagnóstico Operativo
           </button>
           
           <button onClick={onExploreShowcase} className="btn-secondary" style={{ padding: '10px 18px', fontSize: '14px' }}>
-            <span>Explorar Prototipos del Atelier</span>
+            <span>Ver Prototipos de Sala y Cocina</span>
             <ArrowDown size={14} />
           </button>
         </div>
@@ -88,15 +88,15 @@ export const Hero: React.FC<HeroProps> = ({ onDiagnosticClick, onExploreShowcase
             <Gauge size={16} style={{ color: 'var(--status-online)', flexShrink: 0 }} />
             <div style={{ textAlign: 'left' }}>
               <div className="font-mono" style={{ fontSize: '12px', fontWeight: 600, color: 'var(--text-primary)' }}>LATENCIA &lt; 16MS</div>
-              <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>60 FPS estricto</div>
+              <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Respuesta táctil instantánea</div>
             </div>
           </div>
 
           <div className="hero-ribbon-item">
             <Cpu size={16} style={{ color: 'var(--accent-amber)', flexShrink: 0 }} />
             <div style={{ textAlign: 'left' }}>
-              <div className="font-mono" style={{ fontSize: '12px', fontWeight: 600, color: 'var(--text-primary)' }}>ZERO BLOAT</div>
-              <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Cero dependencias pesadas</div>
+              <div className="font-mono" style={{ fontSize: '12px', fontWeight: 600, color: 'var(--text-primary)' }}>100% FLUIDO</div>
+              <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Sin pantallas congeladas</div>
             </div>
           </div>
 
@@ -104,15 +104,15 @@ export const Hero: React.FC<HeroProps> = ({ onDiagnosticClick, onExploreShowcase
             <ShieldCheck size={16} style={{ color: 'var(--status-online)', flexShrink: 0 }} />
             <div style={{ textAlign: 'left' }}>
               <div className="font-mono" style={{ fontSize: '12px', fontWeight: 600, color: 'var(--text-primary)' }}>DISEÑO DEFENSIVO</div>
-              <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Protección activa de datos</div>
+              <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Blindaje contra errores de caja</div>
             </div>
           </div>
 
           <div className="hero-ribbon-item">
             <Layers size={16} style={{ color: 'var(--text-primary)', flexShrink: 0 }} />
             <div style={{ textAlign: 'left' }}>
-              <div className="font-mono" style={{ fontSize: '12px', fontWeight: 600, color: 'var(--text-primary)' }}>DISPONIBILIDAD 99.9%</div>
-              <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Resiliencia en segundo plano</div>
+              <div className="font-mono" style={{ fontSize: '12px', fontWeight: 600, color: 'var(--text-primary)' }}>SOBERANÍA TOTAL</div>
+              <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Sin cuotas abusivas por terminal</div>
             </div>
           </div>
         </div>

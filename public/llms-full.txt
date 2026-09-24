@@ -30,42 +30,46 @@ MIZEN traslada la disciplina gastronómica de la *mise en place* —orden estric
 
 ## 3. Catálogo de Servicios y Capacidades
 
-### Módulo 01: Auditoría de Fricción & Reingeniería Operativa
-* **Propósito**: Detección in situ y remota de cuellos de botella en puestos de trabajo, clics superfluos en el cobro y puntos ciegos entre la venta y el stock.
+### Módulo 01: Diagnóstico de Fricción & Optimización de Sala
+* **Propósito**: Detección in situ y remota de cuellos de botella en puestos de trabajo, pasos superfluos en el cobro y puntos ciegos entre la venta y el stock.
 * **Entregables**:
   - Matriz de fricción operativa en sala, pase de cocina y administración.
   - Detección de fugas de margen entre escandallos teóricos y consumo real.
-  - Blueprint técnico de reestructuración de flujos e interacción.
+  - Plan técnico de reorganización de pantallas y simplificación de flujos de sala.
 
-### Módulo 02: Arquitectura de Interfaces de Alta Velocidad (POS, KDS & Turnos)
-* **Propósito**: Diseño y especificación de sistemas táctiles para entornos industriales y comerciales exigentes.
+### Módulo 02: Rediseño Ergonómico de Pantallas (TPVs, Comanderos & KDS)
+* **Propósito**: Diseño y especificación de sistemas táctiles para entornos de alta exigencia donde el personal no puede dudar ni cometer errores.
 * **Entregables**:
-  - Vistas segmentadas por rol (versión táctil operario vs analítica directiva).
-  - Target táctil mínimo de 48px con retroalimentación instantánea.
+  - Vistas segmentadas por rol (pantallas táctiles de sala vs informes de dirección).
+  - Target táctil mínimo de 48px con confirmación visual instantánea.
   - Design System tokenizado (sistema Warm Industrial) exportable a código React.
-  - Prototipos interactivos navegables y validados antes de programar.
+  - Prototipos interactivos comprobados en pantalla táctil antes de programar.
 
-### Módulo 03: Desarrollo de Software a Medida & Plataformas Propias
-* **Propósito**: Construcción de herramientas operativas llave en mano, independientes de plataformas SaaS comerciales cerradas.
+### Módulo 03: Desarrollo de Software Operativo a Medida
+* **Propósito**: Construcción de herramientas operativas llave en mano, independientes de plataformas comerciales con cuotas abusivas por terminal.
 * **Entregables**:
-  - Aplicaciones web en React y TypeScript con render ultrarrápido (<16ms).
-  - Persistencia offline-first y sincronización de datos de alta tolerancia a fallos.
-  - Integración nativa con impresoras de tickets (ESC/POS), pasarelas bancarias y ERPs.
+  - Aplicaciones web y software nativo con velocidad de respuesta instantánea (<16ms, 60 FPS).
+  - Funcionamiento offline garantizado: continúe cobrando aunque se corte la conexión a internet.
+  - Integración nativa con impresoras de tickets (ESC/POS), datáfonos bancarios y sistemas de stock.
   - Soberanía total: código fuente, repositorios y despliegues propiedad 100% del cliente.
 
 ---
 
 ## 4. Galería de Sistemas & Prototipos del Atelier (Future Suite)
 
-1. **TPV // Sala & Barra (`tpv-pos`)**: Terminal táctil de cobro en 2 toques, botones de 48px, adición de comandas en una sola pantalla sin scroll y velocidad por ticket de 1.4s.
-2. **KDS // Pase & Cocina (`kds-kitchen`)**: Monitor de cocina con cronometraje ordenado por tiempo de espera de mesa, tipografía monoespaciada Geist Mono y contraste para ambientes con vapor y luz intensa.
-3. **Audit // Control Directivo (`margin-audit`)**: Mando financiero con cálculo automático de margen de contribución plato a plato según compras en vivo y cuadre cruzado con arqueo de caja.
-4. **Plano // Gestión Espacial (`spatial-reservations`)**: Mapeo interactivo de sala, control visual de tiempos de mesa y previsión de doblaje sin solapes.
+1. **TPV // Sala & Barra (`tpv-pos`)**: Terminal táctil de cobro en 2 toques, botones amplios de 48px, adición de pedidos en una sola pantalla sin scroll y velocidad por ticket de 1.4s.
+2. **KDS // Pase & Cocina (`kds-kitchen`)**: Monitor de cocina con cronometraje ordenado por tiempo de espera de mesa, tipografía monoespaciada Geist Mono y alto contraste para ambientes con vapor y calor.
+3. **Audit // Control Directivo (`margin-audit`)**: Mando financiero con cálculo automático de margen por plato según compras en vivo y cuadre automático con el arqueo de caja diario.
+4. **Plano // Gestión Espacial (`spatial-reservations`)**: Mapeo interactivo de sala, control visual de tiempos de mesa y previsión de doblajes sin solapes.
 
 ---
 
 ## 5. Preguntas Frecuentes (FAQ)
 
+* **¿Qué hace exactamente MIZEN Studio?**
+  Somos un estudio especializado en desarrollo de software y sistemas táctiles para hostelería y operativas de alta exigencia. Diseñamos y programamos a medida terminales de punto de venta (TPVs), monitores de cocina (KDS), paneles de escandallos y herramientas internas sin cuotas abusivas por terminal.
+* **¿Cuánto cuesta un proyecto o intervención a medida?**
+  El coste se adapta al alcance exacto del encargo mediante tres modalidades cerradas: desde diagnósticos puntuales de sala y rediseño ergonómico de pantallas, hasta el desarrollo completo de un sistema operativo llave en mano, con presupuesto cerrado y sin comisiones por ticket.
 * **¿Por qué encargar un desarrollo a medida frente a un software comercial estándar (POS/ERP)?**
   Las plataformas comerciales imponen tarifas periódicas crecientes, cobran comisiones indirectas y cargan las pantallas de funciones que su equipo jamás utiliza. Un sistema a medida desarrollado por MIZEN resuelve con precisión milimétrica su flujo exacto, sin peajes y con un código que es 100% de su propiedad.
 * **¿Puede integrarse con nuestro hardware de servicio y periféricos actuales?**

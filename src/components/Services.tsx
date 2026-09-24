@@ -9,53 +9,53 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
   const services = [
     {
       id: '01',
-      title: 'Auditoría de Fricción & Reingeniería Operativa',
-      subtitle: 'Operational Friction Audit',
+      title: 'Diagnóstico de Fricción & Optimización de Sala',
+      subtitle: 'Auditoría y Detección de Cuellos de Botella',
       iconDark: '/assets/services/cash-register-dark.svg',
       iconLight: '/assets/services/cash-register-light.svg',
       previewDark: '/assets/ui-previews/preview-cash-audit-dark.svg',
       previewLight: '/assets/ui-previews/preview-cash-audit-light.svg',
-      forWhom: 'Grupos de restauración y operaciones con sistemas lentos que provocan esperas de comensales, fatiga en sala o discrepancias constantes entre el consumo real y la caja.',
+      forWhom: 'Restaurantes y negocios con sistemas lentos que provocan esperas de clientes, estrés en el personal o descuadres entre comandas y caja.',
       deliverables: [
-        'Detección in situ y remota de cuellos de botella y clics superfluos en el servicio.',
-        'Mapeo de fugas de margen entre escandallos teóricos y consumo real de inventario.',
-        'Blueprint técnico de ergonomía y reestructuración de flujos de interacción.'
+        'Detección in situ y remota de cuellos de botella y pasos superfluos en el cobro.',
+        'Mapeo de fugas de margen entre escandallos teóricos y consumo real en cocina.',
+        'Plan técnico de reorganización de pantallas y simplificación de flujos de sala.'
       ],
-      ctaText: 'Solicitar Auditoría de Fricción'
+      ctaText: 'Consultar Diagnóstico de Sala'
     },
     {
       id: '02',
-      title: 'Arquitectura de Interfaces de Alta Velocidad (POS, KDS & Turnos)',
-      subtitle: 'High-Speed UI Architecture',
+      title: 'Rediseño Ergonómico de Pantallas (TPVs, Comanderos & KDS)',
+      subtitle: 'Diseño de Interfaces para Turnos Intensivos',
       iconDark: '/assets/services/kds-screen-dark.svg',
       iconLight: '/assets/services/kds-screen-light.svg',
       previewDark: '/assets/ui-previews/preview-kds-card-dark.svg',
       previewLight: '/assets/ui-previews/preview-kds-card-light.svg',
-      forWhom: 'Operaciones que van a implantar herramientas táctiles internas y exigen pantallas que el personal domine en minutos, sin margen de error en horas punta.',
+      forWhom: 'Equipos que van a renovar comanderos o monitores de cocina y exigen pantallas que cualquier empleado domine en minutos sin errores.',
       deliverables: [
-        'Vistas segmentadas por rol (versión táctil operario vs analítica directiva).',
-        'Protocolos de diseño defensivo con target táctil de 48px y confirmación estricta.',
-        'Sistema de diseño (Design System MIZEN) tokenizado y listo para desarrollo.',
-        'Prototipos interactivos de alta fidelidad validados antes de programar código.'
+        'Vistas separadas por rol (pantallas táctiles de sala vs informes de dirección).',
+        'Diseño defensivo con botones grandes (≥48px) y confirmación de tickets.',
+        'Guía de estilos y componentes lista para implantar en sus dispositivos.',
+        'Prototipos interactivos comprobados en pantalla táctil antes de programar.'
       ],
-      ctaText: 'Diseñar Sistema de Interfaz'
+      ctaText: 'Consultar Rediseño de Pantallas'
     },
     {
       id: '03',
-      title: 'Desarrollo de Software a Medida & Plataformas Propias',
-      subtitle: 'Turnkey Operational Engineering',
+      title: 'Desarrollo de Software Operativo a Medida',
+      subtitle: 'Sistemas Propios sin Licencias Mensuales',
       iconDark: '/assets/services/recipe-costing-dark.svg',
       iconLight: '/assets/services/recipe-costing-light.svg',
       previewDark: '/assets/ui-previews/preview-dish-margin-dark.svg',
       previewLight: '/assets/ui-previews/preview-dish-margin-light.svg',
-      forWhom: 'Compañías que necesitan sistemas propios independientes de suscripciones comerciales genéricas, con soberanía de datos y latencia inferior a 16ms.',
+      forWhom: 'Compañías que buscan herramientas propias independientes de cuotas abusivas por terminal, con control absoluto de sus datos y sin cuelgues.',
       deliverables: [
-        'Aplicaciones web en React y TypeScript con render ultrarrápido (<16ms, 60 FPS).',
-        'Persistencia offline-first y sincronización de datos de alta tolerancia a fallos.',
-        'Integración nativa con impresoras de comandas (ESC/POS), pasarelas bancarias y ERPs.',
-        'Soberanía total: código fuente, repositorios y despliegues propiedad 100% del cliente.'
+        'Aplicaciones web y software nativo con velocidad de respuesta instantánea (<16ms).',
+        'Funcionamiento offline garantizado: siga cobrando aunque se corte internet.',
+        'Conexión directa con impresoras de tickets, datáfonos bancarios y sistemas de stock.',
+        'Soberanía total: el código y los datos son 100% de su propiedad, sin ataduras.'
       ],
-      ctaText: 'Desarrollar Software a Medida'
+      ctaText: 'Consultar Proyecto a Medida'
     }
   ];
 
@@ -77,7 +77,7 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '48px' }}>
           <div className="badge-tag" style={{ marginBottom: '12px' }}>
-            <span>// 03. CAPACIDADES & LÍNEAS DE INTERVENCIÓN</span>
+            <span>// 03. CAPACIDADES &amp; LÍNEAS DE INTERVENCIÓN</span>
           </div>
           
           <h2 style={{
@@ -88,17 +88,17 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
             marginBottom: '12px',
             color: 'var(--text-primary)'
           }}>
-            Planos técnicos de intervención.
+            Cómo trabajamos: Soluciones a medida para su operativa.
           </h2>
           
           <p style={{
             color: 'var(--text-secondary)',
             fontSize: '15px',
-            maxWidth: '620px',
+            maxWidth: '680px',
             margin: '0 auto',
             lineHeight: 1.6
           }}>
-            Sin presupuestos inflados ni ambigüedades. Tres formatos de encargo con entregables exactos y garantía de ejecución profesional.
+            Desarrollamos herramientas que se adaptan a su modelo de sala, no al revés. Tres formatos de trabajo con entregables claros y sin sorpresas.
           </p>
         </div>
 
@@ -157,7 +157,7 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
                       />
                     </div>
                     <span className="font-mono" style={{ fontSize: '11px', color: 'var(--accent-text)', fontWeight: 600 }}>
-                      MOD_0{srv.id} // ATELIER
+                      MOD_0{srv.id} // MIZEN
                     </span>
                   </div>
 

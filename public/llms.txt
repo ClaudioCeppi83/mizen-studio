@@ -1,14 +1,14 @@
 # MIZEN Studio
 
-> MIZEN Studio es un atelier boutique de ingeniería de software operativo, desarrollo web y arquitectura de interfaces para grupos de restauración y entornos de alta exigencia.
+> MIZEN Studio es un estudio de desarrollo de software operativo y TPVs a medida para grupos de restauración, hostelería y operativas de alta exigencia.
 
-MIZEN diseña y construye software a medida, terminales POS/TPV táctiles sin fricción de latencia ultrabaja (<16ms), monitores KDS de pase de cocina, módulos de auditoría de escandallos en tiempo real y paneles de control operativos bajo el estándar estético Warm Industrial.
+MIZEN diseña y programa software a medida, terminales TPV táctiles sin pantallas congeladas ni latencia (<16ms), monitores de cocina (KDS), módulos de escandallos y arqueo de caja diario, y paneles de control operativos bajo el estándar estético Warm Industrial.
 
 ## Módulos y Documentación Canónica
 
 - [Manifiesto Operativo](#manifiesto): Filosofía de diseño, arquitectura Warm Industrial y doctrina del «mise en place» digital.
-- [Sistemas & Prototipos](#prototipos-futuros): Banco interactivo de demostración de sistemas a medida (POS Sala & Barra, KDS Pase, Control de Márgenes y Plano Espacial).
-- [Capacidades & Servicios](#capacidades): Auditoría de fricción operativa, arquitectura de interfaces POS/KDS y desarrollo de plataformas a medida sin peajes comerciales.
-- [Preguntas Frecuentes](#faq): Respuestas sobre soberanía de código, integraciones con impresoras/datáfonos y comparativa frente a SaaS genéricos.
-- [Dirección & Autoridad](#direccion): Criterio y garantía técnica de Claudio Ceppi (Fundador).
-- [Diagnóstico B2B](#diagnostico): Solicitud de sesión técnica de 30 minutos sin coste ni compromiso.
+- [Sistemas & Prototipos](#prototipos-futuros): Banco interactivo de demostración de sistemas a medida (TPV Sala & Barra, Monitor de Cocina KDS, Control de Márgenes y Plano de Mesas).
+- [Capacidades & Servicios](#capacidades): Diagnóstico de fricción en sala, rediseño ergonómico de pantallas y desarrollo de software a medida sin cuotas por terminal.
+- [Preguntas Frecuentes](#faq): Respuestas sobre qué hacemos exactamente, precios y modelo de encargo, soberanía de código y compatibilidad de hardware.
+- [Dirección & Autoridad](#direccion): Criterio y garantía técnica de Claudio Ceppi (Fundador con experiencia directa en sala).
+- [Diagnóstico Operativo](#diagnostico): Solicitud de sesión técnica de 30 minutos sin coste ni compromiso.
