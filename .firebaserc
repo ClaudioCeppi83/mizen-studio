@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "mizen-studio-os-21dd9"
-  }
+  },
+  "targets": {
+    "mizen-studio-os-21dd9": {
+      "hosting": {
+        "mizen-studio-os": [
+          "mizen-studio-os"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

@@ -76,7 +76,6 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MIZEN_STUDIO_OS }}'
           projectId: mizen-studio-os-21dd9
-        continue-on-error: true
 
   deploy-production:
     name: 🚀 Deploy to Production (mizen-studio-os)
@@ -103,11 +102,10 @@ jobs:
           cd functions && npm run build && cd ..
           npm run build
 
-      - name: Deploy Production Hosting & Rules
+      - name: Deploy Production Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MIZEN_STUDIO_OS }}'
           channelId: live
           projectId: mizen-studio-os-21dd9
-        continue-on-error: true
