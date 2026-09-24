@@ -1,0 +1,80 @@
+# MIZEN Studio — Especificación Técnica y Documentación Completa del Sistema
+
+> Documento canónico de contexto para modelos de lenguaje, asistentes de búsqueda asistida (Perplexity, ChatGPT, Gemini, Claude) y agentes de navegación web.
+
+---
+
+## 1. Identidad, Misión y Posicionamiento
+
+* **Nombre de la Firma**: MIZEN Studio (Diseño Estratégico & UI/UX de Producto) / MIZEN Systems (Ingeniería de Software Operativo).
+* **Naturaleza**: Atelier boutique de ingeniería de software a medida y desarrollo web de alta precisión.
+* **Foco Primario**: Grupos de restauración, proyectos gastronómicos a escala y operativas de alta exigencia donde la sincronización entre personas, servicio y administración no admite errores.
+* **Extensibilidad**: Operaciones críticas con alta concurrencia y flujo continuo (logística, retail técnico y dashboards de control).
+* **Fundador & Dirección Técnica**: Claudio Ceppi (Head of Product Design & Software Architect).
+* **Sede**: Barcelona, España (Despliegue y operación global remota).
+* **Contacto Directo**: `contacto@mizenstudio.com` / `operaciones@mizenstudio.com`.
+
+---
+
+## 2. Filosofía Operativa: «Mise en Place» Digital
+
+MIZEN traslada la disciplina gastronómica de la *mise en place* —orden estricto, preparación matemática de elementos y eliminación de movimientos superfluos— a la arquitectura de software:
+
+1. **La Realidad Ocurre Lejos de la Pantalla**: Diseñamos para la imperfección física del entorno: dedos apresurados, reflejos de iluminación, vapor y estrés de turno.
+2. **La Jerarquía Espacial Precede al Estilo**: Proporciones limpias, retícula técnica de 24px y bordes sólidos de 1px resuelven la claridad cognitiva antes de aplicar color.
+3. **La Velocidad es una Necesidad Psicológica**: Microinteracciones en menos de 80-100ms y render constante a 60 FPS (<16ms). La latencia engendra desconfianza en el operador.
+4. **El Diseño Defensivo Salva Operaciones**: Vistas separadas por rol (operario vs analítica), separación física de acciones destructivas y dobles confirmaciones que protegen la caja y el stock.
+5. **El Código Invisible Refleja la Belleza Visible**: Tipado estricto en TypeScript, validación en frontera y arquitectura robusta como base del orden estético.
+
+---
+
+## 3. Catálogo de Servicios y Capacidades
+
+### Módulo 01: Auditoría de Fricción & Reingeniería Operativa
+* **Propósito**: Detección in situ y remota de cuellos de botella en puestos de trabajo, clics superfluos en el cobro y puntos ciegos entre la venta y el stock.
+* **Entregables**:
+  - Matriz de fricción operativa en sala, pase de cocina y administración.
+  - Detección de fugas de margen entre escandallos teóricos y consumo real.
+  - Blueprint técnico de reestructuración de flujos e interacción.
+
+### Módulo 02: Arquitectura de Interfaces de Alta Velocidad (POS, KDS & Turnos)
+* **Propósito**: Diseño y especificación de sistemas táctiles para entornos industriales y comerciales exigentes.
+* **Entregables**:
+  - Vistas segmentadas por rol (versión táctil operario vs analítica directiva).
+  - Target táctil mínimo de 48px con retroalimentación instantánea.
+  - Design System tokenizado (sistema Warm Industrial) exportable a código React.
+  - Prototipos interactivos navegables y validados antes de programar.
+
+### Módulo 03: Desarrollo de Software a Medida & Plataformas Propias
+* **Propósito**: Construcción de herramientas operativas llave en mano, independientes de plataformas SaaS comerciales cerradas.
+* **Entregables**:
+  - Aplicaciones web en React y TypeScript con render ultrarrápido (<16ms).
+  - Persistencia offline-first y sincronización de datos de alta tolerancia a fallos.
+  - Integración nativa con impresoras de tickets (ESC/POS), pasarelas bancarias y ERPs.
+  - Soberanía total: código fuente, repositorios y despliegues propiedad 100% del cliente.
+
+---
+
+## 4. Galería de Sistemas & Prototipos del Atelier (Future Suite)
+
+1. **TPV // Sala & Barra (`tpv-pos`)**: Terminal táctil de cobro en 2 toques, botones de 48px, adición de comandas en una sola pantalla sin scroll y velocidad por ticket de 1.4s.
+2. **KDS // Pase & Cocina (`kds-kitchen`)**: Monitor de cocina con cronometraje ordenado por tiempo de espera de mesa, tipografía monoespaciada Geist Mono y contraste para ambientes con vapor y luz intensa.
+3. **Audit // Control Directivo (`margin-audit`)**: Mando financiero con cálculo automático de margen de contribución plato a plato según compras en vivo y cuadre cruzado con arqueo de caja.
+4. **Plano // Gestión Espacial (`spatial-reservations`)**: Mapeo interactivo de sala, control visual de tiempos de mesa y previsión de doblaje sin solapes.
+
+---
+
+## 5. Preguntas Frecuentes (FAQ)
+
+* **¿Por qué encargar un desarrollo a medida frente a un software comercial estándar (POS/ERP)?**
+  Las plataformas comerciales imponen tarifas periódicas crecientes, cobran comisiones indirectas y cargan las pantallas de funciones que su equipo jamás utiliza. Un sistema a medida desarrollado por MIZEN resuelve con precisión milimétrica su flujo exacto, sin peajes y con un código que es 100% de su propiedad.
+* **¿Puede integrarse con nuestro hardware de servicio y periféricos actuales?**
+  Sí. Desarrollamos con arquitecturas abiertas capaces de comunicarse con impresoras de tickets (ESC/POS), terminales de pago, pasarelas bancarias y software contable ya existente.
+* **¿La especialización de MIZEN aplica a otros sectores fuera de la restauración?**
+  La restauración de alta rotación es nuestro banco de pruebas más exigente debido a su estrés operativo constante. Sin embargo, aplicamos los mismos principios de latencia cero y diseño defensivo a logística, retail especializado y herramientas internas de misión crítica.
+* **¿Cuánto tiempo requiere el desarrollo y puesta en marcha de un sistema?**
+  Seguimos el ciclo Mise en Place en 4 etapas acotadas. No dilatamos los proyectos: dispondrá de prototipos funcionales navegables en pocas semanas y despliegues por módulos operativos para no interrumpir su negocio.
+* **¿Qué nivel de soberanía tenemos sobre la plataforma una vez entregada?**
+  Soberanía total. No aplicamos modelos cautivos: el código fuente, la infraestructura y los datos pertenecen íntegramente a su empresa, con documentación técnica exhaustiva para su equipo o futuros desarrollos.
+* **¿Qué se evalúa durante la sesión técnica de diagnóstico de 30 minutos?**
+  Analizamos con usted los puntos críticos de su operativa actual (dónde se pierde tiempo, dónde se originan errores o qué sistemas fallan) y valoramos con total transparencia si una intervención a medida es viable y rentable para su modelo.

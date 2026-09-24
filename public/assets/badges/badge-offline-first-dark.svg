@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" fill="none">
+  <!-- MIZEN Trust Badge: Offline-First Architecture - Modo Oscuro -->
+  <style>
+    .badge-mono { font-family: 'Geist Mono', monospace; font-size: 8.5px; letter-spacing: 2px; font-weight: 600; }
+  </style>
+
+  <!-- Anillo Exterior Técnico -->
+  <circle cx="80" cy="80" r="74" stroke="#2B313E" stroke-width="2"/>
+  <circle cx="80" cy="80" r="69" stroke="#F59E0B" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- Fondo Central -->
+  <circle cx="80" cy="80" r="54" fill="#161922" stroke="#2B313E" stroke-width="1.5"/>
+
+  <!-- Icono Central: Nodo Local / Servidor Autónomo -->
+  <g stroke="#F3F4F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Servidor Base -->
+    <rect x="62" y="66" width="36" height="16" rx="2" fill="#0E1117"/>
+    <line x1="68" y1="74" x2="78" y2="74" stroke="#4B5563" stroke-width="1.5"/>
+    <circle cx="90" cy="74" r="1.5" fill="#22C55E"/>
+
+    <!-- Ondas de Red Local Ininterrumpida -->
+    <path d="M54 58 C68 46 92 46 106 58"/>
+    <path d="M60 63 C70 54 90 54 100 63"/>
+    
+    <!-- Rayo de Latencia Cero -->
+    <path d="M78 88 L82 88 L79 98 L86 98" stroke="#F59E0B" stroke-width="2"/>
+  </g>
+
+  <!-- Texto Circular Arriba y Abajo -->
+  <path id="curveTop" d="M 22,80 A 58,58 0 0,1 138,80" fill="none"/>
+  <text fill="#F3F4F6" class="badge-mono">
+    <textPath href="#curveTop" startOffset="50%" text-anchor="middle">OFFLINE-FIRST READY</textPath>
+  </text>
+
+  <path id="curveBottom" d="M 138,80 A 58,58 0 0,1 22,80" fill="none"/>
+  <text fill="#F59E0B" class="badge-mono">
+    <textPath href="#curveBottom" startOffset="50%" text-anchor="middle">ZERO LATENCY CORE</textPath>
+  </text>
+</svg>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Pre-paint Theme Detection Script (Anti-FOUC) -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('mizen_theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = (saved === 'light' || saved === 'dark') ? saved : (prefersDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch(e) {}
+      })();
+    </script>
+    
+    <!-- Security & Hardening Meta Tags (OWASP A05 / A03) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https: ws:; base-uri 'self'; form-action 'self';" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <title>MIZEN Studio | Software Operativo &amp; Plataformas a Medida</title>
+    <meta name="title" content="MIZEN Studio | Software Operativo &amp; Plataformas a Medida" />
+    <meta name="description" content="Atelier de ingeniería de software a medida para grupos de restauración y operaciones críticas. Terminales POS, KDS y herramientas internas sin latencia." />
+    <meta name="author" content="Claudio Ceppi — MIZEN Studio" />
+    <meta name="theme-color" content="#F4F4F6" id="meta-theme-color" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Canonical URL (Configurada para producción) -->
+    <link rel="canonical" href="https://mizenstudio.com/" />
+
+    <!-- AI & Machine Readability Discovery (WebMCP / llms.txt) -->
+    <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM Context Summary" />
+    <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Full System Documentation" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    <meta property="og:title" content="MIZEN Studio | Software Operativo &amp; Plataformas a Medida" />
+    <meta property="og:description" content="Atelier de ingeniería de software a medida para grupos de restauración y operaciones críticas. Terminales POS, KDS y herramientas internas sin latencia." />
+    <meta property="og:image" content="/assets/meta/og-card-dark.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="MIZEN Studio — Sistemas Digitales Nacidos para Operar" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="MIZEN Studio | Software Operativo &amp; Plataformas a Medida" />
+    <meta property="twitter:description" content="Atelier de ingeniería de software a medida para grupos de restauración y operaciones críticas. Interfaces operativas, cero latencia y tolerancia cero a fallos." />
+    <meta property="twitter:image" content="/assets/meta/og-card-dark.webp" />
+
+    <!-- Typography: Geist Sans & Geist Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Schema.org Structured Data (Multi-Entity Graph) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "/#organization",
+          "name": "MIZEN Studio",
+          "legalName": "MIZEN Studio & Systems",
+          "url": "/",
+          "logo": "/assets/brand/mizen-logo-horizontal-dark.svg",
+          "image": "/assets/brand/founder-claudio-ceppi.webp",
+          "description": "Atelier de ingeniería de software a medida, arquitectura de producto digital y sistemas operativos para grupos de restauración y entornos de alta exigencia.",
+          "founder": {
+            "@type": "Person",
+            "name": "Claudio Ceppi",
+            "jobTitle": "Founder & Head of Product Design"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Barcelona",
+            "addressCountry": "ES"
+          },
+          "knowsAbout": [
+            "Software Engineering",
+            "Operational POS Systems",
+            "Kitchen Display Systems (KDS)",
+            "High-Performance Web Interfaces",
+            "Digital Mise en Place",
+            "Defensive UI/UX Architecture"
+          ],
+          "areaServed": "Global"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "/#website",
+          "url": "/",
+          "name": "MIZEN Studio",
+          "inLanguage": "es"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Por qué encargar un desarrollo a medida frente a un software comercial estándar (POS/ERP)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Las plataformas comerciales imponen tarifas periódicas crecientes, cobran comisiones indirectas y cargan las pantallas de funciones que su equipo jamás utiliza. Un sistema a medida desarrollado por MIZEN resuelve con precisión milimétrica su flujo exacto, sin peajes y con un código que es 100% de su propiedad."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Puede integrarse con nuestro hardware de servicio y periféricos actuales?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Desarrollamos con arquitecturas abiertas capaces de comunicarse con impresoras de tickets (ESC/POS), terminales de pago, pasarelas bancarias y software contable ya existente."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿La especialización de MIZEN aplica a otros sectores fuera de la restauración?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "La restauración de alta rotación es nuestro banco de pruebas más exigente debido a su estrés operativo constante. Sin embargo, aplicamos los mismos principios de latencia cero y diseño defensivo a logística, retail especializado y herramientas internas de misión crítica."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuánto tiempo requiere el desarrollo y puesta en marcha de un sistema?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Seguimos el ciclo Mise en Place en 4 etapas acotadas. No dilatamos los proyectos: dispondrá de prototipos funcionales navegables en pocas semanas y despliegues por módulos operativos para no interrumpir su negocio."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué nivel de soberanía tenemos sobre la plataforma una vez entregada?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Soberanía total. No aplicamos modelos cautivos: el código fuente, la infraestructura y los datos pertenecen íntegramente a su empresa, con documentación técnica exhaustiva para su equipo o futuros desarrollos."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué se evalúa durante la sesión técnica de diagnóstico de 30 minutos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Analizamos con usted los puntos críticos de su operativa actual (dónde se pierde tiempo, dónde se originan errores o qué sistemas fallan) y valoramos con total transparencia si una intervención a medida es viable y rentable para su modelo."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" fill="none">
+  <!-- MIZEN UI Preview: Ticket de Pase KDS en Vivo - Modo Claro -->
+  <style>
+    .mono { font-family: 'Geist Mono', monospace; }
+    .sans { font-family: 'Geist', sans-serif; }
+  </style>
+
+  <!-- Tarjeta Contenedora Principal -->
+  <rect x="1" y="1" width="418" height="278" rx="6" fill="#FFFFFF" stroke="#E2E4E9" stroke-width="1.5"/>
+
+  <!-- Cabecera de la Comanda -->
+  <path d="M1 1 L419 1 L419 54 L1 54 Z" fill="#F4F4F6"/>
+  <line x1="1" y1="54" x2="419" y2="54" stroke="#E2E4E9" stroke-width="1.5"/>
+
+  <!-- Badge Mesa -->
+  <rect x="20" y="16" width="76" height="24" rx="4" fill="#FEF3C7" stroke="#D97706" stroke-width="1"/>
+  <text x="58" y="32" class="mono" font-size="12" font-weight="600" fill="#D97706" text-anchor="middle">MESA 04</text>
+
+  <!-- ID de Comanda -->
+  <text x="110" y="33" class="mono" font-size="13" font-weight="500" fill="#4B5563">#CMD-108</text>
+
+  <!-- Temporizador de Pase (Geist Mono con punto) -->
+  <circle cx="330" cy="28" r="4" fill="#D97706"/>
+  <text x="342" y="33" class="mono" font-size="14" font-weight="600" fill="#111827">08:45<tspan font-size="11" fill="#6B7280"> min</tspan></text>
+
+  <!-- Lista de Platos en Servicio -->
+  <!-- Plato 1: Listo / Servido -->
+  <g transform="translate(20, 74)">
+    <circle cx="10" cy="10" r="9" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+    <path d="M6 10 L9 13 L14 7" stroke="#16A34A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="32" y="14" class="sans" font-size="13" font-weight="500" fill="#9CA3AF" text-decoration="line-through">2x Arroz meloso de gamba roja</text>
+    <text x="360" y="14" class="mono" font-size="11" fill="#9CA3AF">PASE 1</text>
+  </g>
+
+  <!-- Separador fino -->
+  <line x1="20" y1="112" x2="400" y2="112" stroke="#E2E4E9" stroke-dasharray="2 2" stroke-width="1"/>
+
+  <!-- Plato 2: En preparación activa -->
+  <g transform="translate(20, 126)">
+    <circle cx="10" cy="10" r="9" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+    <circle cx="10" cy="10" r="3.5" fill="#D97706"/>
+    <text x="32" y="14" class="sans" font-size="13" font-weight="600" fill="#111827">1x Solomillo madurado 45d</text>
+    <text x="360" y="14" class="mono" font-size="11" fill="#D97706">FUEGO</text>
+    <text x="32" y="32" class="mono" font-size="11" fill="#D97706">↳ NOTA: Punto carne: poco hecho</text>
+  </g>
+
+  <!-- Separador fino -->
+  <line x1="20" y1="178" x2="400" y2="178" stroke="#E2E4E9" stroke-dasharray="2 2" stroke-width="1"/>
+
+  <!-- Plato 3: En espera -->
+  <g transform="translate(20, 192)">
+    <circle cx="10" cy="10" r="9" fill="#F4F4F6" stroke="#9CA3AF" stroke-width="1.5"/>
+    <text x="32" y="14" class="sans" font-size="13" font-weight="400" fill="#4B5563">1x Soufflé de chocolate 70%</text>
+    <text x="360" y="14" class="mono" font-size="11" fill="#9CA3AF">POSTRE</text>
+  </g>
+
+  <!-- Barra de Estado Inferior -->
+  <path d="M1 236 L419 236 L419 279 L1 279 Z" fill="#F4F4F6"/>
+  <line x1="1" y1="236" x2="419" y2="236" stroke="#E2E4E9" stroke-width="1.5"/>
+
+  <!-- Progreso del Pase -->
+  <text x="20" y="260" class="mono" font-size="11" fill="#4B5563">ESTADO: <tspan fill="#D97706" font-weight="600">MARCHANDO SEGUNDOS</tspan></text>
+  <rect x="290" y="246" width="110" height="24" rx="4" fill="#D97706"/>
+  <text x="345" y="262" class="mono" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">CANTAR PASE</text>
+</svg>

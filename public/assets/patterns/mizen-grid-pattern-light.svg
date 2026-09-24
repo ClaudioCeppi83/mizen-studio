@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <!-- MIZEN Technical Precision Grid Tile - Modo Claro -->
+  <!-- Líneas de rejilla industrial 1px -->
+  <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#E2E4E9" stroke-width="1" stroke-opacity="0.8"/>
+  <!-- Puntos de intersección de calibración -->
+  <rect x="0" y="0" width="2" height="2" fill="#D97706" fill-opacity="0.3"/>
+  <circle cx="24" cy="24" r="1" fill="#9CA3AF" fill-opacity="0.5"/>
+</svg>

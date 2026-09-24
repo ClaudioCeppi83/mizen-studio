@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" fill="none">
+  <!-- MIZEN OpenGraph Social Preview Card (1200x630) - Modo Claro -->
+  <defs>
+    <pattern id="ogGridLight" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E2E4E9" stroke-width="1" stroke-opacity="0.8"/>
+      <circle cx="20" cy="20" r="1" fill="#9CA3AF" fill-opacity="0.4"/>
+    </pattern>
+    <filter id="softGlowLight" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .sans { font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif; }
+    .mono { font-family: 'Geist Mono', monospace; }
+  </style>
+
+  <!-- Fondo Lienzo Claro -->
+  <rect width="1200" height="630" fill="#F4F4F6"/>
+  <rect width="1200" height="630" fill="url(#ogGridLight)"/>
+
+  <!-- Marco Exterior Industrial 1px -->
+  <rect x="24" y="24" width="1152" height="582" rx="8" stroke="#E2E4E9" stroke-width="1.5"/>
+
+  <!-- Marcas de Calibración Técnica en las 4 Esquinas -->
+  <!-- Superior Izquierda -->
+  <line x1="16" y1="24" x2="32" y2="24" stroke="#D97706" stroke-width="2"/>
+  <line x1="24" y1="16" x2="24" y2="32" stroke="#D97706" stroke-width="2"/>
+  <!-- Superior Derecha -->
+  <line x1="1168" y1="24" x2="1184" y2="24" stroke="#D97706" stroke-width="2"/>
+  <line x1="1176" y1="16" x2="1176" y2="32" stroke="#D97706" stroke-width="2"/>
+  <!-- Inferior Izquierda -->
+  <line x1="16" y1="606" x2="32" y2="606" stroke="#D97706" stroke-width="2"/>
+  <line x1="24" y1="598" x2="24" y2="614" stroke="#D97706" stroke-width="2"/>
+  <!-- Inferior Derecha -->
+  <line x1="1168" y1="606" x2="1184" y2="606" stroke="#D97706" stroke-width="2"/>
+  <line x1="1176" y1="598" x2="1176" y2="614" stroke="#D97706" stroke-width="2"/>
+
+  <!-- Símbolo MIZEN Gigante en Fondo Tenue -->
+  <g transform="translate(860, 160) scale(3.4)" opacity="0.04">
+    <polygon points="10,10 38,10 38,90 10,75" fill="#111827"/>
+    <polygon points="92,10 120,10 120,75 92,90" fill="#111827"/>
+    <polygon points="38,10 65,58 92,10 65,30" fill="#111827"/>
+    <polygon points="65,30 65,58 92,10" fill="#4B5563"/>
+    <circle cx="65" cy="88" r="11" fill="#D97706"/>
+  </g>
+
+  <!-- Contenido Principal -->
+  <!-- Cabecera de Marca: Símbolo + Nombre -->
+  <g transform="translate(80, 80)">
+    <!-- Símbolo Vectorial -->
+    <g transform="scale(0.85)">
+      <polygon points="10,10 38,10 38,90 10,75" fill="#111827"/>
+      <polygon points="92,10 120,10 120,75 92,90" fill="#111827"/>
+      <polygon points="38,10 65,58 92,10 65,30" fill="#111827"/>
+      <polygon points="65,30 65,58 92,10" fill="#4B5563" opacity="0.3"/>
+      <circle cx="65" cy="88" r="11" fill="#D97706" filter="url(#softGlowLight)"/>
+    </g>
+    
+    <!-- Texto Logotipo -->
+    <text x="130" y="52" class="sans" font-size="46" font-weight="700" fill="#111827" letter-spacing="4">MIZEN<tspan fill="#D97706">.</tspan></text>
+    <text x="132" y="80" class="sans" font-size="13" font-weight="500" fill="#4B5563" letter-spacing="6">OPERATIONAL SYSTEMS</text>
+  </g>
+
+  <!-- Titular Principal de la Landing (Claim de Marca) -->
+  <text x="80" y="270" class="sans" font-size="54" font-weight="700" fill="#111827" letter-spacing="-1">
+    Sistemas digitales
+  </text>
+  <text x="80" y="335" class="sans" font-size="54" font-weight="700" fill="#D97706" letter-spacing="-1">
+    nacidos para operar.
+  </text>
+
+  <!-- Descripción Subordinada -->
+  <text x="80" y="405" class="sans" font-size="22" font-weight="400" fill="#4B5563">
+    Operational Product Design &amp; Digital Systems. Tolerancia cero a la fricción operativa.
+  </text>
+
+  <!-- Barra de Metadatos Inferiores en Geist Mono -->
+  <g transform="translate(80, 520)">
+    <!-- Pill 1: UI / UX -->
+    <rect x="0" y="0" width="170" height="34" rx="4" fill="#FFFFFF" stroke="#E2E4E9" stroke-width="1"/>
+    <text x="85" y="22" class="mono" font-size="12" font-weight="600" fill="#111827" text-anchor="middle">TPV · KDS · SALA</text>
+
+    <!-- Pill 2: Architecture -->
+    <rect x="185" y="0" width="180" height="34" rx="4" fill="#FFFFFF" stroke="#E2E4E9" stroke-width="1"/>
+    <text x="275" y="22" class="mono" font-size="12" font-weight="600" fill="#D97706" text-anchor="middle">OFFLINE-FIRST CORE</text>
+
+    <!-- Pill 3: Status -->
+    <rect x="380" y="0" width="160" height="34" rx="4" fill="#FFFFFF" stroke="#E2E4E9" stroke-width="1"/>
+    <circle cx="398" cy="17" r="4" fill="#16A34A"/>
+    <text x="475" y="22" class="mono" font-size="12" font-weight="600" fill="#111827" text-anchor="middle">SERVICE READY</text>
+  </g>
+</svg>

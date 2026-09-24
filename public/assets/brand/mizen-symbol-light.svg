@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 110" width="130" height="110" fill="none">
+  <defs>
+    <filter id="softGlowLight" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g>
+    <polygon points="10,10 38,10 38,90 10,75" fill="#111827"/>
+    <polygon points="92,10 120,10 120,75 92,90" fill="#111827"/>
+    <polygon points="38,10 65,58 92,10 65,30" fill="#111827"/>
+    <polygon points="65,30 65,58 92,10" fill="#1F2937"/>
+    <circle cx="65" cy="88" r="11" fill="#D97706" filter="url(#softGlowLight)"/>
+  </g>
+</svg>

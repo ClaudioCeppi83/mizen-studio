@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <!-- MIZEN Operational Systems: Cash Register (TPV / Cobro) - Modo Claro -->
+  <g stroke="#111827" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Pantalla Superior / Visor de Cliente -->
+    <rect x="42" y="14" width="36" height="22" rx="3" fill="#FFFFFF"/>
+    <line x1="48" y1="25" x2="72" y2="25" stroke="#4B5563" stroke-width="2"/>
+    
+    <!-- Soporte / Cuello del Visor -->
+    <path d="M60 36 L60 46"/>
+    
+    <!-- Cuerpo del TPV / Base Angulada con Teclado -->
+    <path d="M30 46 L90 46 L96 82 L24 82 Z" fill="#FFFFFF"/>
+    
+    <!-- Rejilla de Teclas / Pantalla Táctil Operativa -->
+    <line x1="38" y1="56" x2="52" y2="56" stroke="#9CA3AF" stroke-width="2"/>
+    <line x1="58" y1="56" x2="72" y2="56" stroke="#9CA3AF" stroke-width="2"/>
+    <line x1="38" y1="66" x2="52" y2="66" stroke="#9CA3AF" stroke-width="2"/>
+    <line x1="58" y1="66" x2="72" y2="66" stroke="#9CA3AF" stroke-width="2"/>
+    
+    <!-- Cajón Portamonedas / Base Inferior -->
+    <rect x="20" y="82" width="80" height="24" rx="4" fill="#F4F4F6"/>
+    
+    <!-- Ranura de Apertura / Cerradura -->
+    <circle cx="60" cy="94" r="2.5" fill="#4B5563"/>
+  </g>
+  
+  <!-- Ranura de Emisión de Ticket / Tecla Rápida Kitchen Amber -->
+  <line x1="78" y1="56" x2="82" y2="56" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+  <line x1="78" y1="66" x2="82" y2="66" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+</svg>

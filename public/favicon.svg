@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- MIZEN Adaptive Modern Favicon SVG -->
+  <style>
+    :root {
+      color: #111827;
+      --dot-color: #D97706;
+      --facet-color: #4B5563;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color: #F3F4F6;
+        --dot-color: #F59E0B;
+        --facet-color: #E2E4E9;
+      }
+    }
+    .mizen-wing { fill: currentColor; }
+    .mizen-facet { fill: var(--facet-color); opacity: 0.5; }
+    .mizen-dot { fill: var(--dot-color); }
+  </style>
+  <g transform="translate(16, 16) scale(0.24) translate(-65, -55)">
+    <polygon class="mizen-wing" points="10,10 38,10 38,90 10,75"/>
+    <polygon class="mizen-wing" points="92,10 120,10 120,75 92,90"/>
+    <polygon class="mizen-wing" points="38,10 65,58 92,10 65,30"/>
+    <polygon class="mizen-facet" points="65,30 65,58 92,10"/>
+    <circle class="mizen-dot" cx="65" cy="88" r="11"/>
+  </g>
+</svg>

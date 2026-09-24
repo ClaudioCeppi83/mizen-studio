@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" fill="none">
+  <!-- MIZEN Technical Precision Accents & Calibration Marks - Modo Oscuro -->
+  <g stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="square">
+    <!-- Cruz de Registro Superior Izquierda -->
+    <line x1="10" y1="20" x2="30" y2="20"/>
+    <line x1="20" y1="10" x2="20" y2="30"/>
+
+    <!-- Esquina de Visor Superior Derecha -->
+    <path d="M160 15 L185 15 L185 40"/>
+
+    <!-- Marcador de Cota / Medida Central -->
+    <line x1="60" y1="100" x2="140" y2="100" stroke="#F59E0B" stroke-width="1"/>
+    <line x1="60" y1="94" x2="60" y2="106" stroke="#F59E0B" stroke-width="1.5"/>
+    <line x1="140" y1="94" x2="140" y2="106" stroke="#F59E0B" stroke-width="1.5"/>
+    <circle cx="100" cy="100" r="2" fill="#F59E0B"/>
+
+    <!-- Esquina de Visor Inferior Izquierda -->
+    <path d="M15 160 L15 185 L40 185"/>
+
+    <!-- Cruz de Calibración Inferior Derecha -->
+    <line x1="170" y1="180" x2="190" y2="180"/>
+    <line x1="180" y1="170" x2="180" y2="190"/>
+    <circle cx="180" cy="180" r="1.5" fill="#F59E0B"/>
+  </g>
+</svg>
