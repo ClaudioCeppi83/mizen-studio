@@ -46,7 +46,7 @@ export const Hero: React.FC<HeroProps> = ({ onDiagnosticClick, onExploreShowcase
           textTransform: 'uppercase'
         }}>
           SOFTWARE Y TPVs A MEDIDA <br />
-          <span style={{ color: 'var(--accent-amber)' }}>QUE NUNCA SE CUELGAN EN HORA PUNTA.</span>
+          <span style={{ color: 'var(--accent-amber)' }}>QUE NUNCA SE CUELGAN.</span>
         </h1>
 
         {/* Strategic Direct-Answer Block (AEO / GEO & Norma DOC 5: 15px regular, line-height 1.6, color --text-secondary) */}

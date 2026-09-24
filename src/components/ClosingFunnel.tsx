@@ -340,7 +340,7 @@ export const ClosingFunnel: React.FC<ClosingFunnelProps> = ({ preselectedService
               }}>
                 <span>CANAL DIRECTO: <a href="mailto:contacto@mizenstudio.com" style={{ color: 'var(--accent-text)', textDecoration: 'none', fontWeight: 600 }}>contacto@mizenstudio.com</a></span>
                 <span>•</span>
-                <span>LINKEDIN: <a href="https://linkedin.com/in/claudioceppi" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-text)', textDecoration: 'none', fontWeight: 600 }}>claudioceppi</a></span>
+                <span>LINKEDIN: <a href="https://linkedin.com/company/mizen-studio" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-text)', textDecoration: 'none', fontWeight: 600 }}>mizen-studio</a></span>
                 <span>•</span>
                 <span>SEDE: BARCELONA (GLOBAL REMOTO)</span>
               </div>
