@@ -43,8 +43,20 @@ El diseño rechaza tanto el minimalismo clínico hospitalario como los degradado
 ```
 mizenLandingPage/
 ├── .agents/                 # Agentes y skills especializados de Antigravity
-│   ├── agents/              # Subagentes locales del proyecto
+│   ├── agents/              # Subagentes locales (backend-firebase-architect, etc.)
 │   └── skills/              # Habilidades instaladas bajo demanda
+├── .github/
+│   └── workflows/
+│       └── deploy.yml       # Pipeline CI/CD para testing, build y despliegue Firebase
+├── functions/               # Backend Serverless en Google Cloud Functions v2
+│   ├── src/
+│   │   ├── leads/
+│   │   │   └── leadHandler.ts # Validación Zod, anti-bot, rate limit y Firestore
+│   │   ├── notifications/
+│   │   │   └── googleNotificationService.ts # Google Chat Webhooks & Gmail API
+│   │   └── index.ts         # Endpoint /api en región europe-west1
+│   ├── package.json         # Dependencias Cloud Functions (firebase-admin, express, zod)
+│   └── tsconfig.json        # TypeScript Node 20
 ├── public/                  # Assets estáticos servidos en raíz
 │   ├── assets/              # Isotipos, marcas, esquemáticos y previews vectoriales
 │   ├── llms.txt             # Resumen canónico para modelos de lenguaje (AEO)
@@ -65,8 +77,8 @@ mizenLandingPage/
 │   │   ├── ErrorBoundary.tsx# Contención defensiva de excepciones en caliente
 │   │   └── Footer.tsx       # Telemetría, canales corporativos y navegación
 │   ├── services/
-│   │   └── leadService.ts   # Capa de servicio desacoplada para ingesta de leads
-│   ├── test/                # Suite de pruebas automatizadas
+│   │   └── leadService.ts   # Conexión Same-Origin con /api/leads y cola offline
+│   ├── test/                # Suite de pruebas automatizadas (19 tests)
 │   │   ├── setup.ts         # Mocks de entorno y matchers de testing-library
 │   │   ├── leadService.test.ts
 │   │   ├── ClosingFunnel.test.tsx
@@ -75,8 +87,11 @@ mizenLandingPage/
 │   ├── App.tsx              # Ensamblador principal de la aplicación
 │   ├── index.css            # Tokens de diseño Warm Industrial y estilos globales
 │   └── main.tsx             # Punto de entrada de React envuelto en ErrorBoundary
-├── firebase.json            # Configuración de hosting y cabeceras HTTP de seguridad
-├── package.json             # Dependencias, scripts y metadatos SemVer
+├── .firebaserc              # Proyecto exclusivo mizen-studio-os-21dd9
+├── firebase.json            # Hosting CDN, rewrites /api/** a Functions y emuladores
+├── firestore.rules          # Reglas declarativas de privilegio mínimo (Día 1)
+├── storage.rules            # Reglas de contención de Cloud Storage
+├── package.json             # Dependencias frontend, scripts y metadatos SemVer
 ├── tsconfig.json            # Configuración TypeScript estricta
 └── vite.config.ts           # Configuración de compilación Vite y Vitest runner
 ```
@@ -91,35 +106,39 @@ mizenLandingPage/
   * `X-Content-Type-Options: nosniff` (mitigación de MIME sniffing).
   * `Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()`.
   * `Strict-Transport-Security` con preload habilitado.
-* **Seguridad en Capa Aplicación**:
-  * Generación criptográfica de identificadores de seguimiento vía `window.crypto.getRandomValues`.
-  * Protección anti-bot silenciosa mediante campo invisible Honeypot (`company_security_token_hp`).
-  * Validación estricta RFC 5321 (límite de 254 caracteres y sanitización de formato).
-  * Desactivación de sourcemaps en compilación de producción (`sourcemap: false` en `vite.config.ts`).
-  * Protección total contra exposición de datos personales (PII) en código cliente.
+* **Seguridad Declarativa en Base de Datos ([`firestore.rules`](./firestore.rules))**:
+  * Acceso directo desde cliente denegado por defecto (`allow read, write: if false;`).
+  * Privilegio mínimo: únicamente Cloud Functions v2 mediante Firebase Admin SDK puede persistir datos.
+* **Seguridad en Capa Aplicación & Serverless Backend**:
+  * Doble validación Honeypot (cliente invisible + descarte silencioso en servidor).
+  * Validación Zod estricta en servidor con estándar RFC 5321.
+  * Rate-limiting defensivo por IP en Cloud Functions (máx. 5 peticiones por ventana de 10 min).
+  * Hashing criptográfico de IPs para estricto cumplimiento RGPD.
+  * Same-Origin Rewrites: `/api/**` se sirve bajo el mismo dominio que el hosting, eliminando vectores de ataque CORS.
 
 ---
 
-## 5. Scripts de Desarrollo & Verificación
+## 5. Scripts de Desarrollo, Backend & Verificación
 
 ```bash
-# Iniciar servidor de desarrollo local con HMR
+# Iniciar servidor de desarrollo local de frontend
 npm run dev
 
-# Ejecutar suite de pruebas unitarias defensivas
+# Ejecutar suite de pruebas unitarias defensivas frontend
 npm test
 
-# Ejecutar tests en modo observador continuo
-npm run test:watch
+# Ejecutar pruebas unitarias de Cloud Functions backend
+cd functions && npm test
 
 # Análisis estático y linter ultra-rápido (Oxlint)
 npm run lint
 
 # Verificación de tipos TypeScript y compilación de producción
 npm run build
+cd functions && npm run build
 
-# Previsualizar el bundle optimizado de producción localmente
-npm run preview
+# Iniciar suite de emuladores locales de Firebase (Hosting + Functions + Firestore)
+firebase emulators:start --only hosting,functions,firestore
 ```
 
 ---

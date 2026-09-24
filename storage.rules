@@ -1,0 +1,15 @@
+rules_version = '2';
+
+/**
+ * 🏛️ MIZEN Studio — Cloud Storage Security Rules
+ * 
+ * Principio de Mínimo Privilegio (Constitution Art. 2):
+ * Denegación estricta de lecturas y escrituras no autorizadas en buckets.
+ */
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

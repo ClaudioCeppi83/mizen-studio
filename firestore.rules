@@ -1,0 +1,17 @@
+rules_version = '2';
+
+/**
+ * 🏛️ MIZEN Studio — Cloud Firestore Security Rules
+ * 
+ * Principio de Mínimo Privilegio (Constitution Art. 2):
+ * Acceso directo desde cliente denegado por defecto ('allow read, write: if false;').
+ * Toda la ingesta y manipulación de datos se gestiona exclusivamente
+ * a través de Cloud Functions v2 utilizando el Firebase Admin SDK.
+ */
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

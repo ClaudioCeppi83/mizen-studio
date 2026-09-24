@@ -8,6 +8,9 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+functions/node_modules
+functions/lib
+.firebase
 dist
 dist-ssr
 *.local
